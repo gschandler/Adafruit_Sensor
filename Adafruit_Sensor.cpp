@@ -1,5 +1,7 @@
 #include "Adafruit_Sensor.h"
 #include <avr/pgmspace.h>
 
-void Adafruit_Sensor::constructor() {
+Adafruit_Sensor::~Adafruit_Sensor()
+{
+	// do nothing
 }

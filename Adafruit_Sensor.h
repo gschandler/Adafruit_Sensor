@@ -140,11 +140,11 @@ class Adafruit_Sensor {
  public:
   // Constructor(s)
   // Adafruit_Sensor();
-  void constructor();
+  virtual ~Adafruit_Sensor();
 
   // These must be defined by the subclass
-  virtual void getEvent(sensors_event_t*);
-  virtual void getSensor(sensor_t*);
+  virtual void getEvent(sensors_event_t*) = 0;
+  virtual void getSensor(sensor_t*) = 0;
 };
 
 #endif
